@@ -1,0 +1,4 @@
+module RRXDev
+  RAILS_VERSION: String
+  VERSION: String
+end

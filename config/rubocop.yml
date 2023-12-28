@@ -1,0 +1,142 @@
+##
+# Extensions
+require:
+- rubocop-rails
+
+AllCops:
+  SuggestExtensions: false
+  TargetRubyVersion: 3.1.0
+  Exclude:
+    - 'xspecx/**/*'
+    - 'bin/**/*'
+    - 'lib/**/version.rb'
+    - 'Gemfile'
+    - 'db/schema.rb'
+
+##
+# Style
+Style/Documentation:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/MultilineTernaryOperator:
+  Enabled: false
+
+##
+# Layout
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/FirstArgumentIndentation:
+  Enabled: false
+
+Layout/FirstHashElementIndentation:
+  Enabled: false
+
+##
+# Lint
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+
+Lint/AmbiguousOperator:
+  Enabled: false
+
+##
+# Metric
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+##
+# Naming
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+##
+# Rails
+Rails/DynamicFindBy:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/CreateTableWithTimestamps:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+##
+# Security
+Security/Eval:
+  Exclude:
+    - 'Gemfile'
