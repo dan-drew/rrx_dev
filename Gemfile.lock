@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rrx_dev (0.1.0)
+    rrx_dev (0.1.1)
       active_record_query_trace
       activesupport (~> 7.1.0)
       bootsnap
